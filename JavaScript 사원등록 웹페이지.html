@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>인턴과제 #2</title>
+        <link rel="stylesheet" href="System.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>UNET SYSTEM 직원 명단</h2>
+            <div>
+                <form id="form1">
+                    <input id="memberId" type="hidden">
+                    이름 <input type="text" id="userName" size="6">&nbsp; 
+                    부서 <select id="part" size="1">
+                         <option value="경영관리">경영관리</option>
+                         <option value="영업본부">영업본부</option>
+                         <option value="암호인증그룹">암호인증그룹</option>
+                         <option value="보안응용그룹">보안응용그룹</option>
+                         <option value="지원그룹">지원그룹</option>
+                         <option value="임원">임원</option>
+                         </select> &nbsp; 
+                    직급 <select id="position" size="1" style="width: 60px;">
+                         <option value="상무">상무</option>
+                         <option value="이사">이사</option>
+                         <option value="실장">실장</option>
+                         <option value="이사">이사</option>
+                         <option value="수석">수석</option>
+                         <option value="책임">책임</option>
+                         <option value="선임">선임</option>
+                         <option value="전임">전임</option>
+                         <option value="인턴">인턴</option>
+                         </select> &nbsp; 
+                    입사일 <input type="text" id="join" style="width:96px"
+                            placeholder="20XX-XX-XX"> &nbsp; 
+                    이메일 <input type="text" id="email" size="15"> &nbsp;
+                    <button type="button" id='register' class="formBtn">등록</button>
+                    <button type="button" id="update" class="none reBtn">완료</button>
+                    <button type="button" id='cancel' class="none reBtn">취소</button>
+                </form>
+            </div>
+            <div id="surf">
+                <input type="text" id="find" size="15" placeholder="검색">
+                &nbsp;
+                <button id='search' class="formBtn">검색</button>
+                <button id="initBtn" class="formBtn">초기화</button>
+            </div>
+            <div>
+                <table id="myTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>이름</th>
+                            <th>부서</th>
+                            <th>직급</th>
+                            <th>입사일</th>
+                            <th>근속연수</th>
+                            <th>이메일</th>
+                            <th>수정</th>
+                            <th>삭제</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tBody"></tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+    <script src="system.js"></script>
+</html>
